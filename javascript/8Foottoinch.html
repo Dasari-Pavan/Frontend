@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+      <!-- <tr><label>Feet:</label>
+        <td><input type="number" id="t1"/></td>
+        <td><big>=</big></td>
+        <abel>I</label>
+        <td>f1</td>
+      </tr> -->
+      <table align="center">
+        <tr>
+            <td>Feet:</td>
+            <td></td>
+            <td>Inches:</td>
+        </tr>
+        <tr>
+            <td><input type="text" id="feet"/></td>
+            <td><big>=</big></td>
+            <td><input type="text" id="inches"/></td>
+        </tr>
+      </table>
+      <script>
+         var res=document.getElementById('feet');
+         var inches=document.getElementById('inches');
+        
+        feet.addEventListener('input',function()
+        {
+            var f=this.value;
+            var i=f*12;
+            inches.value=i;
+        })
+
+        inches.addEventListener('input',function()
+        {
+            var i=this.value;
+            var f=i/12;
+            if(!Number.isInteger(f))
+            {
+                f=f.toFixed(2);
+            }
+            feet.value=f;
+            
+        })
+     </script>
+</body>
+</html>

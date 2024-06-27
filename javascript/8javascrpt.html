@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <button>Click here</button>
+    <script>
+        
+        document.addEventListener('click',function(){
+            alert("have you");
+        })
+       
+    </script> -->
+
+   <h1> <div id="hover">Mous is over here</div></h1>
+    <div id="res"></div>
+    <script>
+         var x=document.getElementById('hover');
+        x.addEventListener('mouseover',f1);
+        x.addEventListener('mouseout',f2);
+
+        function f1()
+        {
+            document.getElementById('res').innerHTML="mouse is over";
+        }
+        function f2()
+        {
+            document.getElementById('res').innerHTML="mouse is out";
+        }
+    </script>
+</body>
+</html>

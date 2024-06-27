@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table align="center" border="1 px xolid black">
+        <tr>
+            <td>Usd:</td>
+            <td><input type="text" id="usd"/></td>
+        </tr><br><br>
+        <tr>
+            <td>india:</td>
+            <td><input type="text" id="india"/></td>
+        </tr>
+        <tr>
+            <td>china:</td>
+            <td><input type="text" id="china"/></td>
+        </tr>
+      </table>
+      <script>
+         var doll=document.getElementById('usd');
+         var rupee=document.getElementById('india');
+         var chin=document.getElementById('china');
+        usd.addEventListener('input',function()
+        {
+            var d=this.value;
+            var r=d*82;
+            india.value=r;
+
+            var d=this.value;
+            var c=d*0.087;
+            china.value=c;
+        })
+        </script>
+</body>
+</html>

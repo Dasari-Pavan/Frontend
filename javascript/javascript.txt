@@ -1,0 +1,414 @@
+Javascript
+syntax:
+print statement
+console.log("")--browser console
+document.write("pavan kumar")--browser window
+we can't writing markup language in scripting language
+
+note:
+
+    If a progran contains html,css and javascript then it is called
+Dynamic Hypertext Markuplanguage
+
+Javascript Engine
+--Javascript engine is used to execute scriptingn code language on browser window
+
+--It is used to convert user understandale scripting language to machine understandale
+scripting language
+
+
+Javascript varaibles
+
+--A name which isk given to a memory location is called varaible
+--In javascript varaibles are known as Identifiers
+
+1.Local varaibles
+    A varaible which is declare inside the function or block is called local varaible
+and it will be access within the function only
+2.Global varaibles
+    A varaible which is declare outside the function 
+and it will access inside and outside  function
+
+
+Javascript Datatypes
+    javascript is dynamically typed language so we dont need to define any Datatypesat the 
+time of varaible declaration
+
+Primitive Datatypes
+1.number
+2.boolean
+3.String
+4.null
+5.Undefined
+
+Non Primitive Datatypes
+1.Object
+2.Arrays
+3.RegEx
+
+Types of Javascripts
+
+We have two types of Javascripts
+---
+1.Internal Javascript
+2.External Javascript
+
+Javascript Operators
+
+--Operator is a symbol which is used to perform some operations on operands
+1.Airthmetic Operator ---  (+,-,*,/,%,++,--)
+2.Conditional Operatorn----(<,>,<=,>=,==,!=)
+== vs ===
+null vs Undefined
+3.Bitwise Operators ----(&,|,^,!,>>,<<)
+4.Logical opearators---(&&.||,!)
+5.Assignment opearators---(+=,-=,/=,%=,*=)
+6.Special opearatork---(?,new,typeof)
+
+Statements
+--If
+--if else
+--if else if
+
+switch
+
+loops
+--while
+--do while
+--for loop
+--for in loop
+
+switch case we use for option Statements
+
+functions
+--Named function ----function f1(){}
+--Anonymous function-- var f2=function(){}
+--Arrow function --var f3==>(){}
+
+
+Javascript closure
+-- A closure is a combination of functions bundled together along with lexicolscope
+In javascript closures are created every time when functions are created
+
+In other words A closure gives you access to an outer functions scope from inner function
+
+
+Javascript objects
+--A javascript object is entity having states and behaviours
+or collection of properties and functions 
+javascript is a object based language because everything is present in objects
+
+Javascriptis a template based but not class based we dont need to create a class
+to get the object we can create object directly 
+There are 3 ways to create objects
+1.By using object literal
+
+2.By creating instances 
+
+3.Object Constructor
+
+Javascript Arrays
+ex: var arr=[1,2,3,4]
+for(a in arr)
+{
+    documetn.writeIn(arr[i])
+}
+
+Javascript Strings
+--Javascript string is an object which contains collection of characters
+There are two ways to create string in javascript
+1.By using string literal
+2.By using string instance of a string
+Javascript window Object
+
+BOM(Browser object model)
+--The Browser object model is used to interact with browser
+The default object for a browser is window object It means we can call all the 
+functions by using window or directly
+
+ex: window.alert("welcome");
+    or
+    alert("Welcome to javascript")
+
+    alert()
+    confirm()
+    prompt()
+    innerWidth()
+    innerHeight()
+    open()
+    close()
+    moveTo()-absolute
+    moveBy()-relative
+
+setTimeout()
+
+ex:
+function f1()
+{
+setTimeout(function(){
+    alert("Pavankumar")
+},6000)
+f1()
+
+or
+
+function f1()
+{
+    setTimeout(f2,4000)
+}
+function f2()
+{
+alert("Pavan kumar")
+}
+------------------------------------
+2.Clear TIMEOUT()
+
+
+
+
+setInterval()
+clearInterval()
+
+Javascript history
+
+localstorage---doesnot expiry data will store window is close also
+
+sessionstorage--expiry data when close window
+
+--------------------------------------
+DOM--document  object model
+
+ functions of document
+
+ document
+     document.write()
+     document.writeIn()
+     document.getElementById()
+     document.getElementById().innerHTML
+     document.getElementsByName()
+     document.getElementsByTagName()
+     document.getElementByClassName()
+     document.addEventListener()
+        It is used to add the handler to function
+     document.removeEventListener()
+        It is used to remove the handler to function
+
+javascript Date object
+    Javascript Date object is used to display date and time
+using javascript Date object we can display timer on the webpage
+
+
+
+video--9
+
+Hide and show password in text field
+Form validation using RegEx
+
+Javascript Regular Expression
+    Regular expression are patterns used to match character combinations in strings.
+In javascript, regular expressions are also objects
+
+Javascript form validation using RegularExpression
+To generate proper regular expression we can login below url
+
+
+Synchronous
+    step by step execution only wait for previous executing 
+    As the name Synchronous means to be in a sequence i.e every  statement of the code
+get executed one by one so basically a statement has to wait for the earlier statement
+statement to get executed
+
+
+Asynchronous
+     Asynchronous code allows the program to be executed immediately where the Synchronous
+code will block further execution of the remaining code until it finishes the current one. this 
+may not look like a big problem byt when you see it in a bigger picture realize that it may lead
+to delaying the user interface
+
+Javascript promises
+    promises are used to handle Asynchronous operations in javascript
+They can handle multiple asynchronous operations easily and provide better
+error handling than callbacks and events
+
+A promise has four stages:
+
+1)Fulfilled:Action related to the promise succeeded
+2)rejected:Action related to the promise failed
+3)pending:Promise is still pending i.e not fulfilled or rejected yet
+4)settled:Promise has fulfilled or rejected
+
+A Promise can be created using Promise constructor
+
+syntax:var promise=new promise(function(resolve,reject){
+
+        });
+
+
+var vs let vs const
+
+var
+    functional scope--undefined
+    we can declare witout initialization
+    update values new
+    It can be redeclared;
+    It can be accessible without declaration and default value
+
+let
+     block scope
+     we can declare witout initialization
+     update values new
+     It can't be redeclared;
+     It can't be accessible without declaration
+const 
+ block scope
+    we can declare with initialization
+    not update values new
+    It can't be redeclared;
+    It can't be accessible without declaration
+
+
+Hoisting
+    Hoisting is the default behavior of javascript where all the variable and function declarations 
+are moved on top
+This means that irrespective of where the variables and functionsare declared ,they are 
+move on top of the scope
+
+
+Undefined vs null
+
+==or ===
+
+
+
+what is spread opearator in javascript ?
+    The spread operator is  used to spreading an array.
+
+ex:
+var sum=0;
+  function f1(num1,num2,num3)
+  {
+    sum=num1+num2+num3;
+    document.writeIn(sum);
+  }
+  let arr=[10,20,30,40]
+  f1(...arr);
+
+
+  Recursion
+    Function call itself is called Recursion
+ex:
+    function f1(i)
+    {
+        if(i<5)
+        {
+            document.writeIn(i);
+            f1(i+1);
+        }
+    }
+    f1(1);
+
+what is difference between innertext and innerHTML
+
+
+map() method in javascript
+    it creates a new array from calling a function for every array element
+    it does not execute the function for empty elements
+    it doesnot change the original array
+
+ex:
+  const arr=[10,20,30];
+  const newarr=arr.map(f1)
+
+  function f1(num)
+  {
+    return num*10;
+  }
+  document.writeIn(newarr)
+
+
+reduce() method
+    It executes a reducer function for array element
+    it returns a single value the functions accumulated result
+    it doesnot execute the function for empty array elements
+    it does not change the original array    
+
+ex:
+   var arr=[100,20,30];
+   var res=arr.reduce(f1);
+   function f1(total,ele)
+   {
+    return total-ele;
+   }
+   document.writeIn(res);
+
+o/p: 100-20+30=50
+
+Object oriented programming language(OOPS)
+    
+        A technology orlanguage is saidto be object oriented if it 
+supports following features
+ex: class
+    object
+    abstraction
+    encapsulation
+    inheritance
+    polymorphism
+
+Javascript is not a object oriented programming language it is a object based programming 
+language because everything present in javascript is an object likes arrays strings regx Date .
+
+1.what is class in javascript
+A javascript class is not an object
+It is a template for javascript objects
+use the class keyword to create a class
+A class keyword is used to declare a class with any particular name
+
+According to javascript naming conventions ,the name of the class always starts 
+with an uppercase letter
+
+ex:
+  <script>
+    class Example
+    {
+
+    }
+  </script>
+
+2.what is constructor ?
+    A javascript constructor is a special type of method which is used to initialize and
+create an object
+
+It is called when memory is allocated to object
+The constructor keyword is used to declare a constructor method
+The class can contain one constructor method only
+
+Javascript allows us to use parent class constructor through super keyword
+ex:
+   class Example
+   {
+    constructor()
+    {
+        document.writeIn("jjl")
+    }
+   }
+
+3.what is object in javascript
+    A javascript object is an entity having states and behaviors(operations and methods)
+syntax : var a=new object();
+
+4.what is encapsulation in javascript
+
+    The process of wrapping properties and functions within a single unit is known as encapsulation
+
+To achieve an encapsulation in javascript we need to do following things
+-->Use var keyword to make data members private
+-->Use setter methods to set the data and getter methods to get that data
+
+5.what is inheritance in javascript ?
+ The javascript inheritance is a mechanism that allows us to create new classes on the basis
+ of already existing classes
+ It provides flexibility to the child class to reuse the methods and variables of a parent class
+ The javascript extends keyword is used to create a child class on the basis of a parent class
+
+ 5.What is polymorphism
+  The ability to represent in a different forms is called polymorphism

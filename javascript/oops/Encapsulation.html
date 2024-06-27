@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Encaps
+        {
+            constructor(id,name,phno)
+            {
+                this.id=id;
+                this.name=name;
+                this.phno=phno;
+            }
+            // setId(id)
+            // {
+            //     this. id=id;
+            // }
+            // setName(name)
+            // {
+            //     this.name=name;
+            // }
+            // setPhno(phno)
+            // {
+            //     this.phno=phno;
+            // }
+            getId()
+            {
+                return this.id;
+            }
+            getName()
+            {
+                return this.name;
+            }
+            getPhno()
+            {
+                return this.phno;
+            }
+        }
+        var p=new Encaps(99,'dasari',9948);
+        // p.setId(100)
+        // p.setName('Pavan')
+        // p.setPhno(9948356242)
+        document.writeln("Student id:"+p.getId()+"<br>")
+        document.writeln("student name:"+p.getName()+"<br>")
+        document.writeln("phone number:"+p.getPhno())
+    </script>
+</body>
+</html>

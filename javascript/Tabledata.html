@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+    <table border="1px solid gray">
+        <tr>
+            <td>no1:</td>
+            <td><input type="text" id="t1"></td>
+        </tr>
+        <tr>
+            <td>no2:</td>
+            <td><input type="text" id="t2"></td>
+            
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td><button onclick ="f1()">Add</button></td>
+        </tr>
+        <tr>
+            <td>Result:</td>
+            <td><div id="res"></div></td>
+        </tr>
+    </table>
+</center>
+    <script>
+        function f1()
+        {
+            var a=document.getElementById('t1').value;
+            var b=document.getElementById('t2').value;
+            var c=parseFloat(a)+parseFloat(b);
+            document.getElementById('res').innerHTML=c;
+
+        }
+
+    </script>
+</body>
+</html>

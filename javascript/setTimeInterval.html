@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    div{
+        width:200px;
+        height:200px;
+        background-color:gray;
+    }
+</style>
+</head>
+<body >
+
+    <script >
+
+        var a=0;
+        var fun=setInterval(f,1000);
+        function f()
+        {
+            var target=document.getElementById('myid');
+            a=a+10;
+            if(a==100)
+            {
+            clearInterval(fun);
+            }
+            target.style.marginLeft=a+"px";
+        }
+    
+       
+</script>
+<div id="myid"></div>>
+    
+</body>
+</html>

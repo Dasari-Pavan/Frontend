@@ -1,0 +1,13 @@
+
+
+Properties
+
+1.CSS Background property--used to background image in web page
+
+2.CSS border Property---
+
+3.CSS Margin Property
+
+4.CSS Padding Property
+
+5089295060310223

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <fieldset id="cur_id">
+        <legend>Current Address:</legend>
+    <table>
+        <tr>
+            <td>Locality:</td>
+            <td><input type="text" id="t1"></td>
+        </tr>
+        <tr>
+            <td>City:</td>
+            <td><input type="text" id="t2"></td>
+        </tr>
+        <tr>
+            <td>State:</td>
+            <td><input type="text" id="t3"></td>
+        </tr>
+    </table>
+</fieldset>
+<br>
+<input type="checkbox" id="box" onclick="f1()"/>
+current address same as permanent address ?
+<br><br>
+
+<fieldset id="per_id">
+    <legend>Current Address:</legend>
+<table>
+    <tr>
+        <td>Locality:</td>
+        <td><input type="text" id="t1"></td>
+    </tr>
+    <tr>
+        <td>City:</td>
+        <td><input type="text" id="t2"></td>
+    </tr>
+    <tr>
+        <td>State:</td>
+        <td><input type="text" id="t3"></td>
+    </tr>
+</table>
+</fieldset>
+
+    <script>
+        function f1()
+        {
+         if(document.getElementById('box').checked) 
+         {
+            document.getElementById('per_id').style.display="none";
+         }  
+         else
+         {
+            document.getElementById('per_id').style.display="block";
+         }
+        }
+    </script>
+</body>
+</html>

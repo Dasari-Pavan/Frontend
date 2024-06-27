@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Name:<input type="text" />
+
+    <button onclick="f1()">Submit</button>
+    <script>
+        function f1()
+        {
+            var res=document.getElementsByTagName('input').length;
+            document.writeln(res);
+        }
+    </script> -->
+
+    <div>This is division tag 1 </div>
+    <div>This is division tag 2</div>
+    <div>This is division tag 3</div>
+
+    <button onclick="f1()">Submit</button>
+
+    <script>
+        function f1()
+        {
+            var x=document.getElementsByTagName('div');
+            x[0].innerHTML="This is first change";
+            x[1].innerHTML="This is second change";
+            x[3].innerHTML="This is third change";
+        }
+    </script>
+</body>
+</html>

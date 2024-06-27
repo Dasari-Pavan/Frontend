@@ -1,0 +1,49 @@
+-->It is most popular html,css,javascript open source framework developed by twitter
+for for developing web applications 
+It is absolutely free to downloadand use
+Bootstrap contains html and css design template for typography(text),forms,tables,button,etc
+
+it also support javascript plugins
+bootstrap was developed my mark otto and jacob thronton at twitter
+
+it was released an open source product in 2011 on github
+
+bootstrap4 was released in august 19,2015
+
+bootstrap5 which is extension of 4 released in may 5 2021
+
+--------Advantages ---------
+
+1.It supports responsive web design
+2.It saves lot of development time
+3.it is a consists framework
+4.good documentation and communication support
+5.it supports javascript plugins along with jquery
+6.it supports great frid system
+7.it is customizable
+
+
+video ---1
+
+Bootstrap color ---text-color
+Bootstrap background color ---bg-color
+Bootstrap border---border
+Bootstrap border-radius----rounded
+Bootstrap sizing------h,w-25,75,50,100
+Bootstrap display-----d-none,d-block,d-inline,d-inline-block
+Bootstrap containers---container-fluid --100%,container--75%
+
+
+video ---2
+
+Bootstrap spacing 
+    margin
+    padding
+Bootstrap grid system
+Bootstrap float ---float-start,float-end (if want center than do m-auto d-block)
+Bootstrap images
+   rounded
+   rounded circle
+   thumbnail
+Bootstrap design
+  

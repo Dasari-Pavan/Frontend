@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="hover">Mouse over</div>
+    <button onclick="f2()">stop</button>
+    <div id ="res"></div>
+
+    <script>
+        var x=document.getElementById('hover');
+
+        x.addEventListener('mouseover',f1);
+            function f1()
+            {
+                document.getElementById('res').innerHTML+="<P>Mouse event occured</p>";
+            }
+
+            function f2()
+            {
+                x.removeEventListener('mouseover',f1);
+                document.getElementById('res').innerHTML+="<p>Mouse stopped</p>";
+            }
+    </script>
+</body>
+</html>
