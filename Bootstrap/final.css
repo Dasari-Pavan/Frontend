@@ -1,0 +1,148 @@
+*{
+    padding: 0;
+    margin:0;
+    /* box-sizing:box; */
+}
+
+.bgimg{
+    background-image: url('comp.jpg');
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    width: 100%;
+    height:680px;
+}
+
+.headerset
+{
+    padding-top:200px;
+    box-sizing: border-box;
+}
+
+.headerset h2{
+    font-size:42px;
+    font-family:serif;
+}
+
+.headerset h1{
+    font-size:72px;
+    font-weight:bold;
+    font-family: 'Sansita Swashed', cursive;
+}
+
+.nav-link{
+    position:relative;
+    left:650px;
+}
+.nav-link:hover{
+    color:goldenrod;
+}
+/* About */
+/* 
+#About{
+    width: 50%;
+    height:680px;
+}
+
+#cart{
+  border-radius: 50%;
+  width:50px;
+  height:50px;
+  padding: 15px; 
+}
+/*
+
+/* servics */
+
+
+.ourservices
+{
+    padding:100px 0 60px;
+    height: 700px;
+}
+
+.ourservices h1{
+    font-size:50px;
+    font-weight:bold;
+}
+
+.rowsetting
+{
+    margin:80px 0 !important;
+}
+
+.imgsetting
+{
+    border-radius:50px;
+    height:80px;
+    width:80px;
+    display:block;
+    margin:auto;
+}
+.fa-cart-shopping
+{
+    margin-top:25px;
+}
+.fa-desktop
+{
+    margin-top:25px;
+}
+.fa-lock
+{
+    margin-top:25px;
+}
+.rowsetting h2{
+    margin-top:20px;
+    font-size:30px;
+    font-weight:bold;
+}
+.rowsetting p{
+    padding:10px;
+    color:#6c757d !important;
+}
+
+
+/* portgolio */
+
+.portfolio
+{
+    padding:100px 0 60px;
+     height:1100px; 
+    width:100%; 
+}
+.bg
+{
+    background:#dfe6e9;
+}
+.portfolio h1
+{
+    font-size:50px;
+    font-weight: bold;
+}
+.card
+{
+    margin-top: 40px;
+}
+
+
+/* Team */
+
+.Team{
+    padding: 100px;
+    height:600px;
+    width: 100%;
+}
+.bgt{
+    background-color: bisque;
+}
+.figure img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+/* contact */
+.contact{
+    padding: 10px;
+    height:50px;
+    width: 100%;
+}
