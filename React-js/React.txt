@@ -1,0 +1,559 @@
+React Js
+---------
+video--1
+--------
+    It is a declarative ,efficent,flexible javascript frontend library responsible
+to develop frontend applications and user interface (UI)
+
+It is an opensource ,component based frontend library responsible only
+for view layer of the application
+
+
+It is developed by jordan walke who was a software enginner at facebook
+
+It is initially developed and maintained by facebook and later it is used in its
+own products like whatsapp and instagram
+
+It is released to the public in the month of may 2013
+
+latest version v18
+
+It is used to reusable compnents
+
+A component is a building block of react application
+
+App.js -->parent likess in react js
+
+-->Advantages of React/Reactjs
+1.It is easy to learn and easy to use
+2.It is used to create reusable components
+3.It supports one way data binding
+parent to child data 
+4.Good Documentation and community support
+5.It supported by all major browsers
+6.It supports Virtual DOM
+
+What is difference between angular and React
+Angular                                    React
+1.It is a product of Google                It is product of facebook
+2.It is introduced in oct,2015             It is introduced in May.2013
+3.It is Open source javascript framework   It is a frontend javascript library responsible only
+for web and mobile development             only for view layer of the application
+4.It supports two way data binding         It supports one way data binding
+5.It supports traditional DOM              supports Virtual DOM 
+6.It is used to develop rich featured      used to develop single page Application
+application                                 
+7.Typescript language is used in angular   JSX language is used in react
+8.Default port number is 4200              Default port number is 3000
+9.Jasmine and karma is used as a           Jest and Enzyme is used as testing framework
+testing framework                           
+
+if entire website is loading means while we clicking in to another tag in website
+this means using angular js framework used
+or
+withot refreshing simply reflect when you enter to other tab it would be
+Reactjs library used 
+
+Pre-Requisition to learn React
+1.Strong knowledge on HTML  and javascript
+2.Basic idea of ES6 Standards
+3.Good knowledge on JSX
+4.Usage of npm commands                  
+                                               Browser
+                                           + ---------------+
+How Reactjs Works ?                        | ---------------|               
+                                           |                |
+Header---------------------                | Welcome to QT  |             
+                          |                |                |   
+                          |       render   |                |
+Welcome to QT----------Virtual DOM ------->|                |
+                          |                |                |
+                          |                |----------------|  
+Footer--------------------=                +----------------+
+
+After saving and executed if I was made one more change in body html
+then it will appear in and moved to virtual dom of another new DOM then 
+it will render to browser and reflect on it
+
+video--2
+ 
+ JSX--javascript Extension
+
+ JSX  allows use to write html code in javascript
+ 
+ JSX elements contains tags,attributes and childrens
+
+ JSX is not neccessity to develop react applications instead we can use Babel 
+
+ Jsx is makes application simple and elegant
+
+ Jsx ultimately transpile to pure javascript
+
+
+JSX element
+-----------
+JSX element is used to write HTML code in javascript without using createElement()
+or appendChild() method
+
+ex:1
+    JSX 
+        <h1>Heading tag</h1>
+
+        vs
+
+    Babel 
+        React.createElement("h1",null,"Heading tag");
+
+        Here
+        h1--tag name
+        null--optional
+        Heading tag--children
+
+ex:2
+
+    JSX
+      <h1 className="myclass">Heading  tag</h1>
+
+    vs
+
+we write in html  class but in jsx we would write className
+
+    Babel 
+       React.createElement("h1",{className:'myclass'},"Heading tag");
+    
+    and
+
+    React.createElement("h1",{id:'myid',className:'myclass'},"Heading Tag");
+
+
+JSX Expression
+--------------
+
+JSX Expression is used to represent Expression in curly braces i.e {}
+
+JSX Expression can be a varaible ,airthmetic operation or any java valid Expression
+
+ex: 
+    var a=20;
+    {a}
+    {10+20}
+    {Math.random()}
+
+npm 
+-------
+A npm stands for node package manager
+
+It is a integrated tool for Nodejs
+
+A npm is used to install node modules/dependencies
+
+we can install node Modules/dependencies as follow
+
+ex:
+    npm install Module_name/dependency_name
+
+All the node  modules will be installed in node_modules folder
+
+
+steps to work with npm
+
+
+step1:
+----
+        Download and install nodejs software
+        ex:
+            https://nodejs.org/en
+step:2
+        copy nodejs directory
+        ex:
+            c:\prgram\nodejs
+step-3
+        paste nodejs directory in environmental path
+        ex:
+           rigthclcik to pc-->properties -->advance system settings
+           ---->environmental varaibles
+
+
+npm install -g create -react-app
+npx create-react-app myapp1
+
+Inside that directory you can run several commands
+
+npm start
+   starts the development server
+npm run building
+    Bundles the app into static files for production
+npm test
+    Starts the test runner
+npm run eject
+    Removes this tool and copies build dependencies. configuration
+    files and scripts into the app directory if you do this you can't
+    go back
+
+we suggest that you begin by typing
+
+cd myapp1
+npm run start
+
+video --3
+----------
+
+React Project structure explaination and work flow
+myapp1
+|
+|---node_modules
+|
+|----public
+        |---index.HTMl
+        |---fevicon.ico
+        |---maifest.json
+
+
+|
+|-----src
+        |
+        |--index.js
+        |--index.css
+        |--App.js
+        |--App.css
+        |--App.test.js
+|
+|--package.json
+|--Readme.md
+
+
+A myapp1 is a react project name
+A node_modules folder contains all the dependencies and libraries installed
+A index.html is a main template of our application
+A fevicon is a favourite icon of a react application
+A "manifest.json"  file contains meatadata which can be used when we install our application
+in users mobile or desktop
+A "index.js" file is a entry point
+A "index.css" file is related to index.js and it is global
+A App.js file is a parent compnent 
+A App.css file is related to App.js file and it is global
+"App.test.js" file is used for unit testing
+
+package.json file contains all the dependencies which we are using in our application alone wiht their versions
+
+note:
+        App.js and index.js files are mandatory at the time deployment
+
+      loads to      render          output
+App.js-- -->index.js----->index.html----->browser
+
+
+
+ex:
+
+Appjs
+
+    function App()
+    {
+        return(
+                <h1>React js</h1>
+               )
+    }
+export Default App
+
+Anonymous function
+
+ var App=function(){
+    return(
+        <h1> I love to much Reactjs</h1>
+    )
+ }
+export Default App
+
+ Arrow function
+
+ var App=()=>{
+    return(
+        <h1>I rectjs</h1>
+    )
+ }
+export Default App
+Actually one component will accept only one element on node
+if we want to use more than one we have to create div parent element then it will create another node
+so thats why simply use fragement tag or use <> then it will be not create second  node
+to use 1 child element
+
+video---4
+
+React component
+Function component
+Function component with props
+class component
+class component with props
+composing 
+
+
+React component
+-----------------
+A component is a buillding block of react application
+
+React Component allows us to split our UI into reusable independent pieces
+ex:
+        Header,Footer,section,Table,Form etc
+
+React component are like javascript functions because they accept arbitary inputs like 
+"props" and return elements describing what should appear on the screen
+
+React component name always starts with capital letter
+
+There are two ways to create  a component in react
+1.Functional Component/Function Component
+
+   Function components are like javascript functions which take props as argument
+   along with inputs and returns react elements
+   Function compnent is also known as stateless component
+   functional component is state less because it will not allow state allows
+   only props
+note: props value will stored in index.js because it will only calling na 
+function component also called as stateless because allows only props not state
+function f1=(props)=>{
+    return (
+        <>
+        <h1>{props.rollno}</h1>
+        <h1>{props.name}</h1>
+        </>
+    )
+}
+export Default f1
+2.Class Component
+  it also called as statefull component because it will allows both props
+state
+  ex:   
+  class App extends component
+  {
+    render()
+    {
+        return(
+            <>
+            <h1>I love Reactjs</h1>
+            <h1>{this.props.name}</h1>
+            <h1>{this.props.place}</h1>
+            </>
+        )
+    }
+  }
+  export Default App
+
+
+Composing Component
+
+       index.js
+       App.js
+       Student.js
+
+
+css apllying to react
+inline css  and internal css
+
+App.js
+  
+  function App(props)
+  {
+     const mystyle={
+        backgroundColor:"yellow",
+        textAlign:"center",
+        color:"blue"
+     }
+
+     return(
+        <>
+        <h1 style={{color:"blue"}}> This is React class</h1>
+        <h1 style={mystyle}>This is css session</h1>
+        </>
+     )
+  }
+
+
+External css
+
+
+Day-5
+
+steps:
+    Install "Es7 React plugin/Extension from visual studio code
+for shortcuts to create React applications
+ex:
+imr+tab
+imrc+tab
+imrd+tab
+imp+tab
+rcc-class Component
+rcfe-named function component
+rafce-Anonymous function component
+
+
+
+state
+------
+    State is similar to props but it is a private and fully controlled by the component
+we can create a state only in class component  but not in functional component It is possible to update the state or modify the state where as props only for read only
+
+there are two ways to initialize the state in React component
+
+1) Directly inside class
+
+2)Inside the constructor
+
+
+Event handling in react
+
+update  the state
+
+
+
+
+***Interview***
+
+1)ifference between function and class Component
+
+ function Component                 Class Component
+ 1.It is also known as stateless    Also known as Stateful 
+ component                          Component
+
+ 2.In a Function component we used   In a Class Component we used
+ return keyword                      render() methiod
+
+3.It supports hooks                  It does not support hooks
+
+4.constructor is not used            constructor is used
+
+
+2)difference between Real DOM VS Virtual DOM ?
+
+Real DOM                    virtual DOM
+
+1.It updates slow           It updates faster
+
+2.It Directly updates HTML   Can't directly updates html
+
+
+3)difference between PROPS and state ?
+
+props                       state
+
+1.props are read only       states are updatable
+2.props are immutable       state is mutable
+3.props allow us to pass    state holds information about the
+data from one to other      components
+component as an argument
+4.props can be accessed     state cannot be accessed by child compnent 
+by the child component       because it is private
+5.stateless component        Statefull compnents can have state
+can have props
+
+Video--6
+
+Phases of Components in Reactjs
+
+There are four Phases of Components in Reactjs
+If we want to declare life cycle methods or state we should use
+Class Component
+1)Mounting
+    
+    Mounting is a process of creating an element and inserting it in a DOM there
+Mounting Life Cycle methods
+
+*constructor()
+*getDerivedStateFromProps()
+*render()
+*ComponenDidMount()
+
+2)Updating
+
+    Updating will update the elements in to DOM 
+Life Cycle methods
+
+*getDerivedStateFromProps()
+*shouldComponentUpdate()
+*render()
+*getSnapshotBeforeUpdate()
+*ComponentDidUpdate()
+
+3)Error handling
+
+
+4)Unmounting
+    Removing OR Deleting  Elements From DOM
+Unmounting Phase containsone method
+*componentWillUnmount()
+
+Recat -15
+   up to this version  to use Lifecycle methods and state 
+we compulsory need to implement by Class Component
+
+After updating version
+
+React -18
+    
+    we Can also use this State and life cycle methods by using in 
+Functional component also
+
+import React from 'react'
+import {useState} from 'react';
+
+function App(){
+    const[name,setName]=useState("Pavan");
+
+    handleClick=()=>
+    {
+        setName("Dasari")
+    }
+    retur(
+        <div>
+            <h1>{name}</h1>
+            <button onClick={handleClick}>Click me</button>
+        </div>
+    )
+}
+
+useState() -->state in react application (declare the state)
+useEffect() -->side effects in react Application  (side effects)
+useContext() or Context API
+
+FOR large Application using Redux toolkit
+for small Application using Context API
+
+EX:Creating provider and consumer
+
+App.js
+import React form 'react';
+import Acomponent from "./Acomponent";
+export const useContext = React.createContext();
+function App()
+{
+    return(
+        <>
+          <useContext.Provider value={'Java'}>
+          <Acomponent/>
+          </useContext.Provider>
+        </>
+    )
+}
+
+
+Ccomponent.Js
+--------------
+
+import React from 'react'
+import {UseContext} from './App'
+
+function Ccomponent() {
+    return (
+        <>
+        <UseContext.Consumer>
+            {
+                user=>{
+                    return <div>The value is :{user}</div>
+                }
+            }
+        </UseContext.Consumer>
+        </>
+    )
+}
+
+export Default Ccomponent

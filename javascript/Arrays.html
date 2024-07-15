@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Javascript Arrays</h1>
+
+    <P id="new"></P>
+    
+    <Script>
+       let x = "";
+       const myObj = {
+                        name: "John",
+                        age: 30,
+                        cars: [
+                                {name:"Ford", models:["Fiesta", "Focus", "Mustang"]},
+                                {name:"BMW", models:["320", "X3", "X5"]},
+                                {name:"Fiat", models:["500", "Panda"]}
+                             ]
+                     }
+
+    const arr=['pavan','kumar',1,2,3]
+    let annew=arr.pop();
+    document.writeln(arr)
+
+    for (let i in myObj.cars)   
+    {
+        x =x+ "<h2>" + myObj.cars[i].name + "</h2>";
+        
+        for (let j in myObj.cars[i].models) 
+        {
+            x =x+ myObj.cars[i].models[j] + "<br>";
+         }
+}
+
+document.getElementById("new").innerHTML = x;
+        
+        // Arrays
+        // const bikes=["bmw,hero,honda,suzuki"]
+        // document.getElementById("new").innerHTML=bikes;
+
+        // //Arrays in single elements
+        // const bike1='hero';
+        // const bike2='honda';
+        // const bike3='bmw';
+
+        // spaces and declaration is not important also
+
+        // const cars=[
+        //     'bmw',
+        //     'Audi',
+        //     'Rapid'
+        // ];
+
+        // document.getElementById('new').innerHTML=cars;
+
+        // we can create using new keyword for arrays also
+
+        // const cars=new arr("bmw",'audi','hyundai')
+        // document.getElementById('new').innerHTML=cars;
+
+        // convert arrays to string
+
+
+        // const bike=['bmw','hero','honda',"suzuki"]
+        // sbike=bike[bike.length-1];
+        // document.getElementById("new").innerHTML=sbike
+        //     console.log(typeof(bike))
+
+
+        // loop array
+
+        /*const fruits=['apple','mango','orange','grapes']
+        for(let i=0;i<fruits.length;i++)
+        {
+            document.writeln(fruits[i]+"<br>")
+        }*/
+
+    //    instanceof  and array.isarray()  to find variable is array or not
+
+
+</Script>
+</body>
+</html> 

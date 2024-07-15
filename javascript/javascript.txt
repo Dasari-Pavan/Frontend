@@ -83,7 +83,7 @@ switch case we use for option Statements
 functions
 --Named function ----function f1(){}
 --Anonymous function-- var f2=function(){}
---Arrow function --var f3==>(){}
+--Arrow function --var f3=()=>{}
 
 
 Javascript closure
@@ -410,5 +410,190 @@ To achieve an encapsulation in javascript we need to do following things
  It provides flexibility to the child class to reuse the methods and variables of a parent class
  The javascript extends keyword is used to create a child class on the basis of a parent class
 
- 5.What is polymorphism
+6.What is polymorphism
   The ability to represent in a different forms is called polymorphism
+
+
+
+-----------------
+
+---Arrays
+
+However, what if you want to loop through the cars and find a specific one? And what if you had not 3 cars, but 300?
+
+The solution is an array!
+
+An array can hold many values under a single name, and you can access the values by referring to an index number.
+
+ex: const bikes=["pulsar","honda","hero","unicorn"];
+
+---Arrays methods
+
+Array length---find length
+Array toString()---covert arr to string
+Array at()---get exit value from arr
+Arrat.join()--convert arr to string & use specify operator
+Array pop()--this will delete lasr element from arr
+Array push()--insert element in arr at first
+Array shift()--it will delete only first element of arr
+Array unshift()--it will insert only at first  position
+Array delete fruit[0]--delete specific element form arr
+girl.concat(boys)---using to mix both of arrays
+fruit.copywithin(2,0)---method copies arr elements to another position in array
+fruit.copywithin(2,0,2)--copy to index 2 the element from index 0 to 2
+fruit.flat--compress from multi dimensional arr to single dimensional arr
+fruit.splice(2,0,"lem","oran")---used to add new items to an arr
+Array toSpliced()
+Array slice()
+
+---Array Search methods
+
+Array indexOf()---search an element position to find
+Array lastIndeOf()---return lastly occured position of that element
+Array includes()---return true if element is includes
+Array find()---return valueof first arrray element that passes test function
+
+ex:
+   const arr=[1,2,3,4,5]
+   let first=numbers.find(myfunc)
+   function myfunc(value,index,array)
+   {
+    return value>2
+   }
+
+   op: 3
+
+Array findIndex(myfunc)---it will return index value of above function first value
+Array findLast()
+Array findLastIndex()
+
+-----Array Sort methods
+ 
+-- Alpabetic Sort 
+
+Array sort()
+Array reverse()
+Array toSorted()
+Array toReverse()
+Sorting objects
+
+---Numeric Sort
+
+Numeric Sort
+Random Sort
+Math.min.apply(null,arr)
+Math.max.apply(null,arr)
+Math.random()
+
+---Array Iteration 
+
+Array forEach
+Array map()
+Array flatMap()
+Array filter()
+Array reduce(),Array reduceRight()
+Array every(),Array every(),Array some()
+Array from() , Array keys() , Array with(),Array Spread(...)
+
+note : const keyword is used to constant reference for array not 
+constant array
+
+
+
+---Javascript Object literal
+    An Object literal is also called an object initializer
+ex:{name:"pavan",rollno:123,level:2}
+
+Creating a Javascript Object
+ex:
+     const obj={};
+     obj.fname="";
+     obj.gender="";
+
+create a object using new keyword
+const person=new object();
+
+person.fname="pavan";
+person.mname="lakshmi";
+person.gender="male";
+
+when we need to create many objects of the same type
+To create an object type we use an object constructor function
+
+ex:
+
+const person(fname,mname,gender,color){
+    this.fname="ramesh";
+    this.mname="lakshmi";
+    this.gender="male";
+    this.color="white";
+}
+
+Now we can use new person() to create many new person objects
+
+ex:
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Object Constructors</h1>
+
+<p id="demo"></p>
+
+<script>
+
+// Constructor function for Person objects
+function Person(first, last, age, eye) {
+  this.firstName = first;
+  this.lastName = last;
+  this.age = age;
+  this.eyeColor = eye;
+}
+
+// Create two Person objects
+const myFather = new Person("John", "Doe", 50, "blue");
+const myMother = new Person("Sally", "Rally", 48, "green");
+
+// Display age
+document.getElementById("demo").innerHTML =
+"My father is " + myFather.age + ". My mother is " + myMother.age + "."; 
+
+</script>
+
+</body>
+</html>
+
+**JavaScript Object prototypes
+
+All javascript objects inherit properties and methods fron a prototype
+
+Function Person(first,last,age,eyecolor)
+{
+    this.first=first;
+    this.last=last;
+    this.age=list;
+    this.eyeColor=eyeColor;
+}
+const mymother=new person ("lakshmi","Dasari","30","black");
+const myfather=new person("Ramesh","Dasari","30","black");
+
+document.getElementById("myid").innerHTML="my father "+myfather.first
+
+Prototype Inheriteance
+
+    All javascript objects inherit methods and properties from a prototype
+
+1.Date objects inherit from Date.prototype
+2.Array objects inherit form Array.prototype
+3.Person objects inherit from Person.prototype
+
+The object.prototype is on the top of the prototype inheritance chain
+
+Date ,Arrar,person this all objects inherit from object.prototype
+
+uaing prototype property we can add new properties to object
+
+person.prototype.nationalith="indian";
+
+
+
+

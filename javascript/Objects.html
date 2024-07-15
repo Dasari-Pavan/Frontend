@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        // const bikes={};
+        // bikes.brand="pulsar";
+        // bikes.model=2019;
+        // bikes.rank="1";
+
+        // document.getElementById("demo").innerHTML=bikes.brand+" is "+bikes.model+" year "+bikes.rank+" rank ";
+        
+        function person(first,age,rank){
+            this.first=first;
+            this.age=age;
+            this.rank=rank;
+        }
+
+        const mydad=new person('pavan',25,1);
+        document.getElementById('demo').innerHTML="my dad is "+mydad.age
+    </script>
+    
+</body>
+</html>
