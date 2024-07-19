@@ -7,7 +7,7 @@
     <style>
     body{
         background:url("cart.jpg") no-repeat 0px center fixed;
-        background-size: 3030px 1400px;
+        background-size:cover;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -19,6 +19,15 @@
             border: 2px solid white;
             margin:0px 30px;
             backdrop-filter:brightness(60%);
+            transition:all 1s linear;
+            filter: grayscale(100%);
+        }
+        .box:hover{
+            width:300px;
+            height:300px;
+            filter:grayscale(0);
+            transform:rotate(90deg);
+
         }
     </style>
 </head>

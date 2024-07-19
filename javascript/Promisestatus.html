@@ -7,15 +7,28 @@
 </head>
 <body>
     <script>
+        // var promise=new Promise(function(resolve,reject){
+        //     resolve('success');
+        // })
+
+        // promise.then(function(success){
+        //     console.log(success);
+        // },function(failed){
+        //     console.log(failed);
+        // })
+
+
         var promise=new Promise(function(resolve,reject){
-            resolve('failed');
+            resolve('success')
         })
 
-        promise.then(function(success){
-            console.log(success);
+        promise.then(function(success)
+        {
+            console.log('success')
         },function(failed){
-            console.log(failed);
+           console.log('failure')
         })
     </script>
+
 </body>
 </html>

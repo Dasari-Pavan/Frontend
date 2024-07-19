@@ -7,20 +7,33 @@
 </head>
 <body>
     <script>
-        localStorage.setItem("name","pavankumar");
-        localStorage.setItem("age",22);
+        // localStorage.setItem("name","pavankumar");
+        // localStorage.setItem("age",22);
 
-        document.writeln(localStorage.getItem("name")+"<br>");
-        document.writeln(localStorage.getItem("age")+"<br>");
+        // document.writeln(localStorage.getItem("name")+"<br>");
+        // document.writeln(localStorage.getItem("age")+"<br>");
+
+        // localStorage.removeItem("name");
+        // document.writeln(localStorage.getItem("name")+"<br>");
+        // document.writeln(localStorage.getItem("age")+"<br>");
+
+        // localStorage.clear();
+        // document.writeln(localStorage.getItem("name")+"<br>");
+        // document.writeln(localStorage.getItem("age")+"<br>");
+
+        localStorage.setItem("name","Dasari");
+        localStorage.setItem("Age",22);
+
+        document.writeln(localStorage.getItem("name"));
+        document.writeln(localStorage.getItem("Age")+"<br>")
 
         localStorage.removeItem("name");
-        document.writeln(localStorage.getItem("name")+"<br>");
-        document.writeln(localStorage.getItem("age")+"<br>");
+        document.writeln(localStorage.getItem("name"));
+        document.writeln(localStorage.getItem("Age")+"<br>")
 
         localStorage.clear();
-        document.writeln(localStorage.getItem("name")+"<br>");
-        document.writeln(localStorage.getItem("age")+"<br>");
-
+        document.writeln(localStorage.getItem("name"));
+        document.writeln(localStorage.getItem("Age"));
     </script>
     
 </body>

@@ -20,18 +20,20 @@
         var fun=setInterval(f,1000);
         function f()
         {
-            var target=document.getElementById('myid');
+            var target=document.getElementById('myid1');
+            var target2=document.getElementById('myid2');
             a=a+10;
             if(a==100)
             {
             clearInterval(fun);
             }
             target.style.marginLeft=a+"px";
+            target2.style.marginLeft=a+"px";
         }
-    
+        
        
 </script>
-<div id="myid"></div>>
-    
+<div id="myid1"></div><br>
+<div id="myid2"></div>
 </body>
 </html>

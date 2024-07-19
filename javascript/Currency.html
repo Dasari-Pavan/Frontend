@@ -34,6 +34,26 @@
             var c=d*0.087;
             china.value=c;
         })
+        china.addEventListener('input',function()
+        {
+            var d=this.value;
+            var r=d*82;
+            india.value=r;
+
+            var d=this.value;
+            var c=d*0.087;
+            usd.value=c;
+        })
+        india.addEventListener('input',function()
+        {
+            var d=this.value;
+            var r=d*82;
+            usd.value=r;
+
+            var d=this.value;
+            var c=d*0.087;
+            china.value=c;
+        })
         </script>
 </body>
 </html>

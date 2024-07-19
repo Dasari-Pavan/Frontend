@@ -7,6 +7,7 @@
 </head>
 <body>
     <p id="demo"></p>
+    <p id="demo2"></p>
     <script>
         // const bikes={};
         // bikes.brand="pulsar";
@@ -20,9 +21,16 @@
             this.age=age;
             this.rank=rank;
         }
-
         const mydad=new person('pavan',25,1);
         document.getElementById('demo').innerHTML="my dad is "+mydad.age
+
+        function dog(name,age)
+        {
+            this.name=name;
+            this.age=age;
+        }
+        const mydog=new dog('german',9);
+        document.getElementById('demo2').innerHTML="my dog is "+mydog.name+" and age "+mydog.age; 
     </script>
     
 </body>
