@@ -595,5 +595,284 @@ uaing prototype property we can add new properties to object
 person.prototype.nationalith="indian";
 
 
+What are Map, Reduce and Filter functions in programming ?
+ 'Map' applies a function to each element in an array and returns an array of the results,
+ 'Reduce' applies a function to the array and returns a single output, 
+ 'Filter' uses a boolean function to select certain elements from an array.
+
+
+ ------------------------------------------
+
+ jS MATHS methods
+ --------
+ Math.round()---rounded value up to its
+ Math.celi()--rounded value up to its numvber
+ Math.floor()---rounded value down to its number
+ Math.trunc()---Returns integer part of x
+
+ Math.random---return random values
+ we can use ,max and min  
+function getRndInteger(min, max) {
+  return Math.floor(Math.random() * (max - min + 1) ) + min;
+} 
+
+
+switch
+--------
+switch (new Date().getDay()) {
+  case 0:
+    day = "Sunday";
+    break;
+  case 1:
+    day = "Monday";
+    break;
+  case 2:
+     day = "Tuesday";
+    break;
+  case 3:
+    day = "Wednesday";
+    break;
+  case 4:
+    day = "Thursday";
+    break;
+  case 5:
+    day = "Friday";
+    break;
+  case 6:
+    day = "Saturday";
+}
+
+for loop
+---------
+syntax:for(let i=0;i<nli++)
+        {
+        }
+
+for in loop--- for (key in objects)
+                
+                {  }
+
+for...in is useful when you need to work with object properties and their values,
+while for...of is great for iterating through the values of an iterable like arrays, strings, sets, or maps.
+
+switch
+break---jump out
+continue---jump over
+
+**SET**
+Passing an array to set is used for unique values contains any type primitive values or objects
+const arr=new Set(["a","b","c"])    
+ or
+ const letter=new Set()
+ letter.add( )
+
+
+**MAP***
+
+A Map holds key-value pairs where the keys can be any datatype.
+A Map remembers the original insertion order of the keys.
+
+ex:
+const fruits = new Map([
+  ["apples", 500],
+  ["bananas", 300],
+  ["oranges", 200]
+]);
+     or
+fruits.set("apples", 200); -----> to change existing values
+
+
+***JavaScript Destructuring***
+
+ex:
+// Create an Object
+const person = {
+  firstName: "John",
+  lastName: "Doe",
+  age: 50
+};
+
+// Destructuring
+let {lastName, firstName} = person;
+
+
+***JavaScript RegularExpression
+
+A regular expression is a sequence of characters that forms a search pattern.
+
+The search pattern can be used for text search and text replace operations.
+
+ex:
+txt.search();
+txt.replace("pavan","kumar")
+
+
+***javascript precedence***
+
+high order preference *,/,+,-  this will com\
+
+
+***Errors***
+
+The try statement defines a code block to run (to try).
+
+The catch statement defines a code block to handle any error.
+
+The finally statement defines a code block to run regardless of the result.
+
+The throw statement defines a custom error.
+
+ex:
+<input id="demo" type="text">
+<button type="button" onclick="myFunction()">Test Input</button>
+<p id="p01"></p>
+
+<script>
+function myFunction() {
+  const message = document.getElementById("p01");
+  message.innerHTML = "";
+  let x = document.getElementById("demo").value;
+  try {
+    if(x.trim() == "") throw "empty";
+    if(isNaN(x)) throw "not a number";
+    x = Number(x);
+    if(x < 5) throw "too low";
+    if(x > 10) throw "too high";
+  }
+  catch(err) {
+    message.innerHTML = "Input is " + err;
+  }
+}
+</script>
+
+1.Evalerror
+2.RangeError--- txt.precision(500)  if it was taking high number throw RangeError
+3.reference error---if we used reference variable that has not been declared
+4.syntax error---A syntax error will throw when we missing invetd commas
+5.TypeError--you cannot convert number to uppercase
+6.URIerror--
+
+
+***Modules***
+
+JavaScript modules allow you to break up your code into separate files.
+This makes it easier to maintain a code-base.
+
+Modules are imported from external files with the import statement.
+
+Modules also rely on type="module" in the <script> tag.
+
+ex:
+<script type="module">
+import message from "./message.js";
+</script
+
+
+Export :
+
+Modules with functions or variables can be stored in any external file.
+There are two types of exports: Named Exports and Default Exports.
+
+Named Exports------>
+ex:
+export const name="pavan";
+export const age=33;
+     or
+name="pavan";
+age=33
+export {name,age};
+
+Default Exports ----->
+ex:
+const message=()=>{
+    const name="pavan"
+    const age=33
+    return name +'is'+ age
+};
+export default message;
+
+samae like this only we can import also
+ex: import {name,age} form './person.js';
+    import message from './person.js'
+
+what is jSON ?
+
+JavaScript OBJECT notation
+    json is lightweight data interchange format
+    json is language independent
+    json is self-describing and easy to understand
+
+A common use of JSON is to read data from a web server, and display the data in a web page.
+
+
+ex:
+
+let text = '{ "employees" : [' +
+'{ "firstName":"John" , "lastName":"Doe" },' +
+'{ "firstName":"Anna" , "lastName":"Smith" },' +
+'{ "firstName":"Peter" , "lastName":"Jones" } ]}';
+
+
+**Functions
+
+Call invokes the function and allows you to pass in arguments one by one.
+Apply invokes the function and allows you to pass in arguments as an array.
+Bind returns a new function, allowing you to pass in a this array and any number of arguments.
+
+***Apply vs. Call vs. Bind Examples***
+
+Call
+
+var person1 = {firstName: 'Jon', lastName: 'Kuperman'};
+var person2 = {firstName: 'Kelly', lastName: 'King'};
+
+function say(greeting) {
+    console.log(greeting + ' ' + this.firstName + ' ' + this.lastName);
+}
+
+say.call(person1, 'Hello'); // Hello Jon Kuperman
+say.call(person2, 'Hello'); // Hello Kelly King
+Apply
+
+var person1 = {firstName: 'Jon', lastName: 'Kuperman'};
+var person2 = {firstName: 'Kelly', lastName: 'King'};
+
+function say(greeting) {
+    console.log(greeting + ' ' + this.firstName + ' ' + this.lastName);
+}
+
+say.apply(person1, ['Hello']); // Hello Jon Kuperman
+say.apply(person2, ['Hello']); // Hello Kelly King
+Bind
+
+var person1 = {firstName: 'Jon', lastName: 'Kuperman'};
+var person2 = {firstName: 'Kelly', lastName: 'King'};
+
+function say() {
+    console.log('Hello ' + this.firstName + ' ' + this.lastName);
+}
+
+var sayHelloJon = say.bind(person1);
+var sayHelloKelly = say.bind(person2);
+
+sayHelloJon(); // Hello Jon Kuperman
+sayHelloKelly(); // Hello Kelly King
+
+
+
+***Currying***
+At its core, currying is a functional programming technique that involves 
+breaking down a function that takes multiple arguments 
+into a series of functions that take one argument each.
+This creates a chain of functions, where each function returns another function until the final result is achieved.
+
+
+***Event bubbling , capturing***
+Event bubbling means when you click on event suppoaw it will always goes down approach
+only rather than upside DOM
+
+***Capturing
+Capturing will be suppose you would click on event than it will goes to take
+upisde dom approach  rather than down approach
 
 
