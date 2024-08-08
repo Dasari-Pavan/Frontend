@@ -1,15 +1,15 @@
 import React from 'react'
-import { UserContext } from './App'
+import { UseContext } from './App'
 function CComponent() {
   return (
     <div>
-<UserContext.Consumer>
+<UseContext.Consumer>
     {
       user=>{
         return<div>{user}</div>
       }   
     }
-</UserContext.Consumer>
+</UseContext.Consumer>
     </div>
   )
 }

@@ -11,6 +11,10 @@ function App()
         category:""
   })
 
+//value="" in form --->takes data from form to userRegistration state variable
+//onchange()="" in form --> gives data from form to display by setUserRegistration
+
+
   const handleChange=(e)=>
   {
     const name=e.target.name;
@@ -18,6 +22,7 @@ function App()
     setUserRegistration({...userRegistration,[name]:value})
   }
 
+  // it doesnot Redirect to anywhere when submited
   const handleSubmit=(e)=>
   {
     e.preventDefault();
@@ -42,8 +47,8 @@ function App()
       
           <label htmlFor='date' className='my-3'>Date:</label>
           <input type='date' name='date' className='form-control'
-          value={userRegistration.date}
-          onChange={handleChange}/>
+          value={userRegistration.date}   
+           onChange={handleChange}/>       
 
           <label htmlFor='category' className='my-3'>category:</label>
           <select className='form-control' name='category'

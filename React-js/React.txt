@@ -306,11 +306,12 @@ There are two ways to create  a component in react
 
    Function components are like javascript functions which take props as argument
    along with inputs and returns react elements
-   Function compnent is also known as stateless component
+   Function component is also known as stateless component
    functional component is state less because it will not allow state allows
    only props
 note: props value will stored in index.js because it will only calling na 
 function component also called as stateless because allows only props not state
+ props will hold properties fo app and values
 function f1=(props)=>{
     return (
         <>
@@ -337,6 +338,7 @@ state
         )
     }
   }
+
   export Default App
 
 
@@ -493,6 +495,12 @@ React -18
     we Can also use this State and life cycle methods by using in 
 Functional component also
 
+predefine hooks
+-----------------
+useState()--state in react application
+useEffect()--side effects in react applications
+useContext() or Context API
+
 import React from 'react'
 import {useState} from 'react';
 
@@ -631,6 +639,7 @@ with out reloading or refress web page single web page Application
 React Router standing library system build on the top of React  
 by using React Router library
 nee to install one dependencies
+
 npm install react-router-dom
 
 two tags 
@@ -672,3 +681,27 @@ Then it will reflect on React application
 -->React Form
 
     Forms are the internal part of react applications
+
+
+
+video --9
+
+-->List in React--map()
+
+
+-->Axios library--- communicate between frontend and backend
+
+Axios is used to make HTTP request (GET,POST,PUT,DELETE)
+
+Using axios we can give the request to Rest API's 
+
+we can install axios by using below commands
+--npm install axios or yarn add axios
+
+types of api's
+
+private api
+public api
+composite api
+
+

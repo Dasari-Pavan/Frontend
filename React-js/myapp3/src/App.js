@@ -1,12 +1,12 @@
 import React from 'react'
 import AComponent from './AComponent'
-export const UserContext=React.createContext();
+export const UseContext=React.createContext();
 function App() {
   return (
     <div>
-      <UserContext.Provider value={'Java'}>
+      <UseContext.Provider value={'Java'}>
       <AComponent/>
-      </UserContext.Provider>
+      </UseContext.Provider>
       
     </div>
   )
