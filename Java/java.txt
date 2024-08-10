@@ -1,0 +1,570 @@
+
+
+Coding examples all in Eclipse 
+
+video 1 & 2
+Escape Characters or Escape Sequences
+--------------------------------------
+whenever we went to display our output in neat and clean manner then we need to use 
+escape Characters or escape Sequences
+Every escape characters starts with blackslash(\) followed by a single characters
+
+ex:
+    \n--new line
+    \t(horizontal tab)
+    \b(back space)--delete back character
+    \r(carriage return)--r replace backward to forward
+    \f(form feeding)--
+    \\(back slash)--print this get in print one \
+    \"(double quote)
+    \'(single quote)
+System.out.println("pav\nan") -->
+o/p-pav
+    an
+
+video 3
+Interview common things
+
+c is procedure oriented
+c++ is structure is oriented
+java is object oriented
+
+c++
+1.It is developed by Bjarne Stroustrup
+2.It is a partial object oriented programming language
+3.It is a platform dependent
+4.Memory allocation and deallocation will taken care by programmer
+5.supports multiple inheritance
+6.supports pointers
+7.it supports goto statements
+8.supports preprocessor directory(#)
+9.supports three access specifiers i.e public,private,protected
+
+
+
+Java
+1.It is developed by james gosling
+2.It is pure object oriented programming language
+3.It is a platform independent
+4.Memory allocation and deallocation will take care by jvm
+5.not support multiple inheritance
+6.not support pointers
+7.not supports goto statements
+8.not support preprocessor directory
+9.it supports four access modifiers i.e default,public ,private and protected4
+
+
+*)Difference between python and java
+
+python
+------------------------
+1.It is developed by Guido van rossum
+2.it is a product of microsoft
+3.it is a scripting language
+4.it is a interpretes language
+excutes directly
+5.it is a python virtual machine(pvm)
+6.It is a dynamically typed language
+we not declare datatype 
+7.low security
+excutes directly in----->computer
+8.performance is low
+.py file--------------->computer(high level language)
+9.It contains lowcode
+
+
+Java
+---------------------------
+1.It is developed by Guido van rossum
+2.it is a product of oracle
+3.it is a oop  language
+4.it is a compiled language
+copiled first
+5.it supports JVM
+6.It is a statically typed language
+we will declare datatype
+7.High security
+excutes directly in----->JRE (class file)
+8.performance is high
+.java file -->.class file--->   jJRE
+(high level language) (bye code)
+9.It contains highcodes
+
+SDLC
+-------------------------
+SDLC stands for software Development Life Cycle.
+
+It is a process adopt by IT industry to develop accurate and quality of softwares
+
+six phasses in SDLC
+
+1.Feability study
+this pahases completely depends upon TELOS formula
+ex: T-Technical feasbility
+    E-Economical Feasibility
+    L-legal feasbility
+    O-operation feasbility
+    S-Schedule Feasbility
+All the above information we will write in a document 
+2.Analysis
+This phase system Analyst or product owner will involved
+project :
+    WaterFall modeel old modelnow all following agile methodolgys
+
+They will separate System requirements and Software requirements     
+They will keep above Information in  document called SRS 
+srs--System requirement Specification
+
+3.Designing
+There are two types of Designing
+1.High Level Designing
+--------------------
+        In high level Designing we will design main/major modules 
+        A manager is responsible to perform high level desigining
+
+2.Low level Designing
+--------------------
+        A low level desigining we will design sub module/child modules
+        A team lead/project lead is responsible to perform low level desigining
+ 
+ They will keep above Information in a document  called TDD/PDD
+
+4.Coding
+    
+    In these phases developers will involved 
+Developers are responsible to generating the code(build)
+Once our build is ready then developers will perform white box testing
+
+5.Test
+
+In this phase testing team or QA team will involved
+QA is responsible to perform testing on build by using a software component 
+STLC(Software testing life cycle)
+
+Once The STLC Process is done then they will perform black box testing
+
+6.Delivery and Maintainence
+
+Before Delivery we will perform UAT testing
+UAT stands for User Acceptance testing
+
+it is divided into two types
+1)Alpha testing
+---------------
+    Testing which is done at company location is called alpha testing
+
+2)Beta Testing
+--------------
+    Testing which is done at Client location is called beta testing
+
+Once UAT testing is done successfully then project is ready for Delivery
+
+
+
+video-4
+----------------
+Naming Conventions
+
+        languages
+
+case Sensitive languages    
+c
+c++
+Java
+.Net
+python
+and excutes
+
+case Insensitive languages
+HTML - tag based language
+
+Oracle DB --->queries 
+
+topics----classes,interfaces,variables,constants,packages,methods
+
+ex:
+class       : PavanKumar
+interface   : IPavanKumar
+variable    : pavanKumar
+method      : pavanKumar()
+packages    : com.pavankumar.www
+constants   : PAVANKUMAR/PAVAN_KUMAR
+
+
+What is Java ?
+    Java is a object oriented platform independent , case Sensitive , Strongly typed checking,
+high level,open source programming language developed by James Gosling in the year of 1995
+
+Features of Java?
+We have following important features in java
+
+1.Simple
+2.Object oriented
+3.High level
+4.platform independent
+5.Architecture Neutral
+6.Portable
+7.Highly secured
+8.Robust
+9.Dynamic
+
+Q)Which package is a default package in java?
+java.lang package
+
+Q)How many classes are there in java ?
+java 7 - 4024 classes
+java 8 - 4240 classes
+java 9 - 6005 classes
+java 10 - 6002 classes
+
+Q)Who is the responsible to destroy the objects in java?
+
+Garbage collector
+
+Q)In how many ways we can call garbage collector in java ?
+
+There are two ways to call garbage collector in java
+1.System.gc(); or System.close();
+2.Runtime.getRuntime().gc();
+
+
+
+History of java
+-------------------
+1990--->sun micro system --->took on project--->software
+        consumer electronic device (stealth project -->green project)
+James Gosling,Mike Sherdin and patrick naughton
+        place---.Aspan/colardo(Graphic system)
+but problem found said by James Gosling --->c and c++ languages (System dependent)
+so why not we create programming language System independent
+System independent-->1991-->OAK-->sILK-->1995 OAK -->JAVA
+
+
+Identifiers
+------------
+Name in java is called Identifier
+
+It can be class name,variable name,method name or label name
+
+Every identifier is case Sensitive
+
+Reserved words(53)--->keywords(50)  and Reserved literals(3)
+
+Q)what is the Difference between JDK ,JRE AND JVM
+Java software-->JDK
+jdk stands for java development kit
+It is a installable software which consists java runtime environment(JRE),Java virtual maachine(JVM),
+Compiler (javac) ,interpreter(java),Archiever(.jar),document generator (javadoc) and other tools needed
+for java application development
+
+JRE
+----
+JRE stands for java runtime environment
+it provides very good environment to run java application only
+
+JVM
+---
+JVM stands for java virtual machine
+jvm is an interpreter which is used to execute our program line by line procedure
+
+DIAGRAM check in screenchots
+
+
+Java 
+------
+version   : java8
+jdk       : 1.8v
+creator   : james gosling
+vendor    :oracle
+opensource:yes
+
+Softwares----->Express edition(classes,Institute,internet,academics etc.. for free)
+        
+        ----->Enterprise Edition(IT Company ,but not free(commercial))
+
+
+        javac
+javaApp------->.class file(byte code)---->clasfolder/sub system
+
+if byte instruction is ok then load to classloader it allocate memory otherwise refused
+How many Memorys in java
+Method Area     HEAP(objects)    JAVA stack(variables)      pc Register     Native methodstack(native method interfce)
+
+
+
+IN Execution engine contains interpreter and just in time Compiler
+whenever jvm is loading to byte code interpreter and jit compiler using so that it can generate byte code
+
+then it load to operating system
+
+
+Internal Architecture of JVM
+----------------------------------
+    Java application contains java code instruction once if we compiler java code instructions convert to byte code
+    instruction in (.classfile)
+
+    Jvm will invoke one module called classloader/sub system to load all the byte code instruction form
+    .class file and the classloader is to check these byte code instructions are proper or not if they are not proper
+    it will refuse the Execution if they are proper it will allocate memory
+
+Java contains five types of memory
+1)Method Area
+It contains code of a class ,code of a method and code of a variable
+2)HEAP
+our object creation will stor in heap Area
+3)stack
+java methods execute in method area but to execute those methods it requires save
+memory that memory will be allocated in java stack
+4)PC Register
+it is a program counter Register which is used to track the address of an instruction
+5)Native methods stack
+Java methods will execute in method area
+similarly native methods will execute in native method stack
+but to execute native methods required a program called Native method interface
+
+
+Execution engine
+-----------------
+whenever JVM loads byte code instructions from .class file ,it simultaneously uses interpreter and JIT compiler
+interpreter is used to execute our program line by line procedure
+JIT compiler is increased speed of Execution program
+
+Q)what is packages
+collection of classes and interfaces
+
+Q)How many classloaders are there in java?
+1)Bootstrap classloader(it loads rt.jar file)
+2)Extension classloader(it loads all jar folders from ext folder )
+3)Application/system classloader(it loads .class file from classpath)
+
+video--8
+----------------
+Datatypes
+two types 
+1)Primitive datatype
+Numeric datatype---byte,short,int,long,float,double
+Boolean datatype----Boolean
+character datatype----char
+
+2)Non-Primitive datatype
+String
+Arrays
+class
+Interface
+and etc
+
+ex:write a program to find  min and max value of byte ?
+class Test{
+    public static void main(String []args)
+    {
+        System.out.println(Byte.MIN_VALUE);
+        System.out.println(Byte.MAX_VALUE);
+    }
+}
+
+q)Is java purely object oriented or not?
+
+No Java will not consider as purely object oriented programming language
+because it does not support many OOPS Concepts like multiple inheritance,
+operator overloading and moreover we depends upon primitive datatypes which are non-objects
+
+
+video-9
+--------------------------
+A name which is given to a memory location is called variable
+purpose of variable is used to store data
+In java variables are divided into two types
+1)Primitive variable
+    It is used to represent primitive values
+2)Reference variables
+    It is used to represent object Reference
+    ex:
+      student s=new student();
+      here s is Reference variable
+Based on the position and execution above variables are divide in to three types
+1)Instance variables/non-static variable
+
+A value of variable which is change from object to object is called Instance varaiable
+Instance varaiable will be created at the time of object creation AND it will destroy at the time of object
+destruction hence  scope of an instance varaiable is same as  scope of an object
+
+Instance varaiables will store in Heap area as a part of an object
+Instance varaiables must and should declare immediately after the class
+but not inside methods,blocks and constructors
+
+Instance varaible we can access from instance area but we cannot access directly from
+static area
+
+To access instance varaiable from static area we need to create object Reference
+ex:
+ int i=10;
+ Test t1=new Test();
+
+ex:
+class Test
+{
+    int i=10;
+    public static void main(String []args)
+    {
+        Test t=new Test();
+        System.out.println(t.i);//10
+    }
+}
+
+ex:
+class Test{
+    public static void main(String []arsg)
+    {
+        Test t1=new Test();
+        t1.m1();
+    }
+    //non static method
+    public void m1(){
+        System.out.println("Instance method");
+    }
+}
+  
+note: if we won't intialise instance varaiable then jvm  it will create default value;
+
+2)static variables/global variables
+A value of a varaiable which is not varaied from object t object is called static variable
+
+A static varaiable will be created at the time of classloading and it will destroy at the 
+time of class unloading hence scope of static varaiables as same as scope of a .class file
+
+static variable will store in method area 
+static varaiable we can access directly from instance area as well as static area
+static varaiable we can access by using object Reference and by classname
+ex:
+class Test{
+    static int i=1;
+    public static void main(String []args)
+    {
+        System.out.println(i);
+        System.out.println(Test.i);
+        Test t1=new Test();
+        System.out.println(t1.i);
+    }
+}
+
+note: If we won't intialise any value to static variable then JVM will intialised default value
+
+3)local variables/Temperory variables/Automatic variables
+
+we will declare varaiables inside methods ,blocks and constructors such type of varaiables are
+called local varaiables
+
+A local varaiable will be created at the time of execution block and it will destroy when 
+execution block is executed hence scope of local varaiable is same as scope of a executionblock
+where it is declared
+
+local varaiables will store java stack memory
+ex:
+class Test{
+    public static void main(String []args)
+    {
+        int i=10;
+        System.out.println(i);
+    }
+}
+
+note:If we won't initialize any value to local varaiable then JVM will not initialized
+default values
+
+video-10
+---------------------------------
+whenever we used import statements we should not use fully qualified name
+using shortname also we can Achieve (classes and interface)
+in java we have three import statements
+1)Expilict class import 
+This is type of import statement is highly recommanded to use because it is used to improve
+readability of our code
+ex:
+import java.util.Date;
+import java.time.LocalDate;
+class Test{
+    public static void main(String []args)
+    {
+        Date d=new Date();
+        System.out.println(D);
+        LocalDate date=new LocalDate.now();
+        System.out.println(date);
+    }
+}
+
+2)Implicit class import
+This type of import statement is not recommanded to use because it will reduce the readability 
+of our code
+ex:
+import java.util.*;
+
+3)Static import
+Using static import we can call static members directly
+often use of static import makes our program complex and unredable 
+
+ex:
+import static java.lang.System.*;
+public Test{
+    public static void main(String[] args)
+    {
+        out.println("pavan");
+    }
+}
+ex: Api
+     |
+ packages
+ |      |      
+classes interfaces
+|     |  
+|   methods
+variables
+
+Main Method
+--------------
+java program contains main method or not
+Either it is properly declared or not .It is not a responsibility of a compiler to check.
+it is a liability of a JVM to check main method always at runtime
+if jvm won't find main method thenit will throw one runtime error called main method not found
+
+Jvm looks for main method with following signature
+
+1)orde of modifiers is not important incase of public static we can declare static 
+public also
+ex:static public void main(String []args)
+we can change String[] array with var-arg parameter
+ex:
+public static void main(String... args)
+we can replace args with any java identifier(String []pav)
+
+
+Q)what is Literal ?
+ A value is assign to a variable is called literals
+ A value which is not change during the program execution is called literal
+ ex: int i=10;
+ 10 -->value of variable/literal
+ i -->varaiable Name/Identifier
+ int -->Datatype/Keyword
+
+ Q)Explain main method in java?
+ public:jvm wants to call main method from anywhere
+static :jvm wants to call this method without using object Reference
+void : main method does not return anything to jvm
+main : it is an identifier given to main method
+String[] args:It is a command line argument
+
+command line arguments
+-------------------------
+Arguments which are passing through command prompt such type of arguments are called
+command line arguments
+In command line arguments we need to pass our inputs at runtime command
+
+ex:
+class Test{
+    public static void main(String []args)
+    {
+        Sop(args[0])
+    }
+}
+javac test.java
+java test 101
+//101

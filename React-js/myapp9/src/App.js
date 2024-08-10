@@ -6,6 +6,7 @@ class App extends Component{
     name:"Pavan",
     love:"Dady"
   }
+  // updating state variable using setState
   handleClick=()=>{
     this.setState({name:"Dasari" ,love:"mom"})
   }
