@@ -568,3 +568,304 @@ class Test{
 javac test.java
 java test 101
 //101
+
+
+video--11
+--------------------------------------------------
+System.out.println()
+It is output statement in javaI
+It means whenever we want to display any data or userdefined statements then we need to use
+System.out.println();
+
+syntax:
+
+System.out.println("hoho");--->here System-->predefined final class
+                                    out--->Static variable
+                                    println-->predefined method
+
+Java Basic Programs
+--------------------------------------
+Q)write programme to add two numbers
+Q)cube ,square
+Q)area of circle
+Q)perimeter of circle
+Q)Swapping of two numbers
+Q)Swapping without third variable using
+a=a+b;
+b=a-b;
+a=a-b;
+Q)10% of salary tds (sal*10/100)
+Q)find CGPA to percentage
+float percentage=cgpa*9.5f;
+
+
+video-11
+-------------------------------------------
+1)Implicit typecasting
+    If we want to store smaller value into a bigger varaiable then we need to use Implicit
+    typecasting
+A compiler is responsible to perform Implicit typecasting
+There is no possibility to loss the information
+this is also known as widening or upcasting
+syntax:
+byte--->short-->char-->int-->long-->float-->double
+
+ex:
+class Test{
+    public static void main(String []args)
+    {
+        int i=5;
+        float f=i;
+        System.out.print(f)//5.0
+    }
+}
+
+2)Explicit typecasting
+    If we want to store bigger value into smaller varaiable then we need to use explicit typecasting
+
+    A programmer is responsible to perform explicit typecasting
+There is a possibility to loss the information
+it is also known as narrowing downcasting
+ex:
+byte<--short<---char<--int<--long<--float<--double
+
+ex1:
+clas Test{
+    public static void main(String []args)
+    {
+        float f=10.5f;
+        int i=(int)f;
+        System.out.println(i);
+    }
+}
+
+Operators
+------------------
+operator is a symbol,which is used to perform some operations on operands 
+1)Assignment Operators
+2)Conditional/Ternary Operators
+3)Logical Operators
+4)Bitwise Operators
+5)Airthmetic Operators
+6)Relational Operators
+7)Unary operators
+
+Q)greatest of three numbers
+int max=(a>b)?((a>c)?a:c):((b>c)?b:C)
+
+-->How to convert decimal to binary
+20-decimal number
+2|_20_ -->0 reminder for 2*10=0
+2|_10_ -->0 reminder  for 2*5=0
+2|_5_  -->1 reminder for 2*2=1
+2|_2_  -->0 reminder for 2*1=0
+   1
+-->How to covert binary to decimal
+
+1010--binary number
+10-- decimal
+
+1010---0*1 + 1*2 + 0*4 + 1*8 =10;
+
+Right shift operator
+--------------------
+it will double form 1 digit like 
+1=2
+2=4,8,16,32,64,128 etc....
+10>>1 = 10/2 =5
+10>>2 =10/4 =2
+100 >> 5 =100/32 = 3
+
+left shift operator
+-------------------
+it will multiply with double numbers
+2,4,8,16,32,64
+10 << 3 =10*8 =80
+10 << 2 =10*4 =40
+
+post increment
+----------------
+int i=10;
+j=i++
+o/p- j=10,i=11
+
+pre increment
+---------------
+int i=10;
+j=++i
+o/p- j=10,i=10
+
+Types of blocks in java
+---------------------------------
+A block is a set of statements which is enclosed in a curly braces {}
+ex: {
+        //set of statements
+    }
+In java we have three types of blocks
+1)Instance block
+Instance block is used to initialize the instance variables
+Instance block will execute at the time object creation   
+we can declare instance block as follow
+syntax:
+        //instance block
+        {
+            --
+            --//set of statements
+        }
+
+ex:1
+    class Test{
+        //instance block
+        {
+            System.out.println("instance block");
+        }
+        public static void main(String []args)
+        {
+            System.out.println("Main method")
+            Test t=new Test();
+        }
+    }
+
+o/p: main method
+    instance block
+
+2)Static block
+
+A static block is used to initialize the static and always execute first than main method
+
+ex:
+class Test{
+    static
+    {
+        System.out.println("static block");
+    }
+    public static void main(String []args)
+    {
+        System.out.println("main method");
+    }
+}
+
+o/p:static block
+    main method
+
+
+3)Local block
+
+A loacl block is used to initialize the local varaiable
+A local block will execute just like a normal statement
+A local block must and should declare inside methods and constructors
+
+syntax:{
+            //local block
+        }
+
+
+video--14
+------------------------
+Control statements
+-----------------------------
+1)Decision making statement
+    It is used to create Conditions in our program 
+Decisions making statement is possible by using following ways
+if,if else,if else if ladder,nested if
+switch
+
+2)Iterators
+while,dowhile,for
+
+fibonnaci
+int a=0,b=1
+System.out.print(a+""+b+"");
+for(int i=2;i<=n;i++)
+{
+    c=a+b;
+    System.out.println(c+" ");
+    a=b;
+    b=c;
+}
+
+video --16
+--------------------
+Various ways to write methods in java
+There are four ways to write methods in java
+1)No returntype with no argument method
+2)No returntype with argument method
+3)with returntype with No argument method
+4)with returntype with argument method
+
+video--17
+---------------------
+A method which call itself for many number of times is called recursion
+Recursion is similar to loopings
+If we are using recursion then we should not use loops
+Q)print natural numbers using recursion
+class test{
+    psvm(){
+
+        num(1)
+    }
+    public static void num(int i)
+     {
+        if(i<=10)
+        {
+            System.out.print(i+" ");
+            display(i+1);
+        }
+     }
+}
+
+Q)print sum of two numbers without using Airthmetic operator?
+class Test{
+    public static void main(String []args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        System.out.print(sum(5,11));
+    }
+    public static int sum(int a,int b)
+    {
+        if(a==0)
+          returnb;
+        return sum(--a,++b);
+    }
+}
+
+Interview
+------------
+Q)Write a program find factorial of given num?
+
+class Test{
+    public static void main(String []args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        fact(5);
+    }
+    public static int fact(int n)
+    {
+        if(n<=0)
+           return
+        return n*fact(n-1)
+    }          
+
+
+Q)fibonnaci series recursion
+class Test{
+    public static void main(String []args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+
+    }
+    public static int fib(int n)
+    {
+        if(n==0 ||n==1)
+            return 0;
+        if(n==2)
+            return 1;
+        return fib(n-1)+fib(n-2);
+    }
+    
+}
+
