@@ -869,3 +869,339 @@ class Test{
     
 }
 
+videos--19
+
+Arrays
+-----
+In normal varaiable we can store on value at a time
+if we want to store multiple values in a single variable
+then we need to use Arrays
+
+Definition
+----------
+Array is a collection of homogeneous data elements
+The main advantages of arrays are
+1)We can represent multiple elements by using single variable name
+ ex:    int[] arr={10,20,30,40}
+
+2)performance point of view array is recommanded to use
+
+Disadvantages
+--------------
+1)Arrays are fixed in size,once if we create an array there is no chance of
+increasing or decreasing the size of an array
+
+2)To use array concept in advanced we should know what is the size of an array which
+is always not possible
+
+
+Array declaration
+In java arrays are classified  into three types
+1)Single dimensional Array
+    int[] arr=new int [3]
+2)Double dimensional Array
+    int[][] arr=new int [3][3]
+3)Multi dimensional Array
+    int[][][] arr=new int[3][4][5]
+
+Rules:
+-----
+Rule 1:
+A the time of array creation compulsary we need to specify array size
+ex: int[] arr=new int[3];  //valid
+    int[] arr=new int[];  //Compile time error array dimension missing
+
+Rule 2:
+    It is legal to have an array size with zero
+    ex: int[] arr=new int[0];
+        System.out.println(arr.length);//0
+Rule 3:
+    we can't give negative number as an array size otherwise we will get
+    runtime exception called NegativeArraySizeException
+        int[] arr=new int[-1];
+rule 4:
+    The allowed datatype of an array size is byte,short,int and char if we take 
+    other datatypes then we will get compile time error
+    ex:  int[] arr=new int['a']
+
+rule 5:
+    The max length we can take for an array size is maximum length of int 
+    ex: int[] arr=new int[148278999]    
+
+Array Initilization
+--------------------
+Once if we create an array ,every array element will be initialized with default values
+default is 0
+If we are not happy with default values then we can change with customized values 
+int[] arr=new int[3]
+arr[0]=10;
+arr[1]=20;
+arr[2]=30;
+arr[3]=40;//Runtime error ArrayIndexOutofBoundException
+
+Array declaration,creation and initilization using single line
+--------------------------------------------------------------
+int[] arr;
+arr=new int[3];
+arr[0]=10;
+arr[1]=20;
+arr[2]=30;   //  int[] arr={10,20,30};
+                 char[] arr={'a','b','c','d'}
+                 String[] arr={"pavan","taher","harish"};
+
+Q)What is Difference between length and length()
+
+length
+------
+It is a final varaiable which is applicable for arrays
+it will return size of an array
+ex:
+int[] arr=new int[5]
+System.out.print(arr.length) //6
+
+length()
+--------
+It is predefined method which is applicable for String object
+it will return number of characters present in String
+
+String str="pavan";
+System.out.println(str.length());  //5
+
+Q)Write program array insert and display elements?
+Q)Ascending order --nested for loops
+Q)Descending order --nested for loops
+Q)Sum of Array
+Q)Highest value in array
+Q)Smallest value in array   
+Q)display duplicate elements in array -- nested for loops
+Q)triplcate sum
+Q)Segregate array ---aside numbers 
+Q)leader elements
+Q)missing elements
+Q)prime elements from array
+Q)delete first occurance of element
+
+
+
+Video--22
+------------------------
+Double dimensional Array is a combination of rows and columns
+
+Double dimensional array is implementes based on array of arrays approach
+but not matrix form
+This main objective of double dimensional array is memory utilization
+
+
+
+syntax:
+        int[][] arr=new int[3][4];
+
+        Here we can store 12 elements
+
+if we want to develop oriented application ,gaming applications,
+matrix type of applications we need  to use double dimensional array
+
+
+
+Q)display array elements in matrix form?
+Q)sum of Daignol elements
+Q)Sumo of upper triangle elements
+
+Q)What is Anonymous Array?
+Sometimes we will declare an array without name such type of nameless array 
+is called anonymous array
+
+The main objective of anonymous array is just for instance use
+
+we declare anonymous array as follows
+
+ex:
+    new int[]{10,20,30};
+    new int[][]{{10,20,30},{40,50,60}} 
+
+We can invoke anonymous array with any number of integer value including zero
+
+
+Q)Write a java Console to display sum of integer elements from array?
+
+Core Java
+---------------
+OOPS
+Exception Handling
+Collections
+MultiThreading
+
+OOPS(Object oriented programming)
+---------------------------------
+A technology which provides very good environment to represent our data in the form of objects
+is called object oriented technology
+
+A technology is said to be object oriented if it is supports following features 
+ex:   class
+      object
+      Abstraction
+      Encapsulation
+      inheritance
+      Polymorphism
+
+-
+class
+------
+A class is a collection of data members and behaviours
+
+Here  data members means varaiables , fields and properties
+
+Here behaviours means methods,actions and characteristics
+
+In general , a class is a collection of varaiables and methods 
+
+A class file is also known as blue print of an object 
+
+
+we can declare a class as follow
+syntax:
+        modifier class class_name <extends> parent_classname
+                                  <implementes> interface_name
+
+        {
+
+            //varaiables
+            //methods
+        }
+A class will accept following modifiers
+ex:
+  default
+  public
+  final
+  abstract
+
+Q)What is the Difference between default and final class?
+
+default class
+-----------
+If we declare any class as default then we can access class that with in the package
+ex: class Test{
+
+}
+
+Public class
+----------
+If we declare any class as public then we can access that class within the package
+and outside the package
+
+jvm will generate hash code for every object but same object remains same hash code
+ex:
+test t1=new test()
+Sop(t1.hashCode())
+
+hashCode()
+------------
+It is a method present in Object class
+
+For every object JVM will create a unique identification i.e hash code
+
+In order to read hash code of an object we need to use hashCode() method
+
+toString()
+-----------
+It is method present in Object class
+
+whenever we are trying to display any object Reference, directly or indirectly
+toString() method will be executed
+
+
+Q)What is object class in java ?
+
+Object class present in java.lang.package
+object class is a present/super class for every java class
+object class contains following methods
+
+Video-23
+----------
+Data Hiding
+----------------
+Our Internal data should not go out directly
+
+It means outside person must not access our data directly
+
+By using private modifier we can implementes data hiding concept
+
+The main objective of data hiding is to provide security
+ex:
+    class Account
+    {
+        private bank balance;
+    }
+
+Abstraction
+------------
+Hiding the internal implementation and high lighting the set of services
+is called Abstraction
+
+Using abstract classes and interfaces we can implements Abstraction
+
+The best exampleof Abstraction is GUI(Graphical  user interface) ATM machine where bank people
+will hide internal implementation and highlights the set of services like banking,
+withdraw,statement,etc...
+
+advantages
+-----------
+1)It gives security because it will hide internal implementation from the outsider for security reason
+
+2)Enhancement becomes more easy because without effecting end user they can perform any changes
+in our internal system
+
+ 3)It provides flexibility to the enduser to use the system
+
+ 4)It improves maintainability of an application
+
+ Encapsulation
+ ---------------
+The process of Encapsulating or grouping variables and it's associate
+methods in a single entity is called Encapsulation
+
+A class is said to be encapsulated class if it supports data hiding + Abstraction
+In Encapsulation for every variable we will write setter and getter methods
+(Encapsulate is protected )
+
+advantages
+------------
+1)It gives security
+2)Enhancement becomes more easy
+3)It provides flexibility to the enduser to use the System
+4)It improves maintainability of of the application
+
+The main disadvantage  of encapsulation is, it will increase the source code and slow
+down the execution process
+
+note:
+Abstraction is data hiding
+Encapsulation is used to protect the data by using access modifiers
+
+
+Q)What is Difference between POJO class and Java Bean class
+POJO
+-----
+A class is said to be POJO class if it supports following 2 properties
+1)All varaiables must be private
+2)All varaiables must have setter and getter method
+
+Java Bean class
+----------
+A class is said to be java bean class if it supports following 4 properties
+
+1)A class should be public
+2)A class should have atleast zero argument constructor
+3)All varaiables  must be private
+4)All varaiables must have setter and getter methods
+
+note:
+------
+Every java bean class is a pojo class but every class is not a java bean class
+
+IS-A Relationship
+-----------------
+IS-A Relationship is also known as inheritance
+using extends keyword we can implements is a Relationship
+The main objective of is a Relationship is to provide reusability
+
